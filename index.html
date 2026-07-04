@@ -335,8 +335,7 @@
       }
 
       // --- INTEGRASI GEMINI AI ---
-      const GEMINI_API_KEY =
-        "AQ.Ab8RN6Kg7xvO_BUw6dlLSlmo4NedK7nBiT9wbVEYfoDmcA9D-g";
+      const GEMINI_KEY = "";
 
       async function analisisKebunDenganAI() {
         const btnAI = document.getElementById("btn-ai");
@@ -375,7 +374,7 @@
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
-                "X-goog-api-key": GEMINI_API_KEY, // <-- Menggunakan Header X-goog-api-key sesuai cURL
+                "X-goog-api-key": GEMINI_KEY, // <-- Menggunakan Header X-goog-api-key sesuai cURL
               },
               body: JSON.stringify({
                 contents: [{ parts: [{ text: promptText }] }],
